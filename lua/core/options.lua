@@ -1,4 +1,7 @@
 local opt = vim.opt
+
+opt.laststatus = 3
+opt.guicursor = ""
 opt.termguicolors = true
 opt.number = true
 opt.relativenumber = true
@@ -9,3 +12,5 @@ opt.expandtab = true
 opt.smartindent = true
 opt.timeoutlen = 250
 opt.ttimeoutlen = 0
+opt.swapfile = false
+opt.backup = false

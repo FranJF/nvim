@@ -18,10 +18,23 @@ return {
 				center = true,
 				dim = false,
 			},
+			show = {
+				statusline = true,
+				tabline = false,
+			},
 		},
 		styles = {
 			zen = {
-				backdrop = { transparent = false },
+				backdrop = {
+					transparent = false,
+					wo = { winhighlight = "Normal:Normal,NormalFloat:Normal" },
+				},
+			},
+			explorer = {
+				border = "rounded",
+				wo = {
+					winhighlight = "Normal:Normal,NormalNC:Normal",
+				},
 			},
 		},
 
