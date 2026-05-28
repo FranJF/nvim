@@ -26,7 +26,7 @@ return {
 					preview_cutoff = 120,
 				},
 				borderchars = {
-					prompt  = { "─", "│", " ", "│", "╭", "╮", "│", "│" },
+					prompt = { "─", "│", " ", "│", "╭", "╮", "│", "│" },
 					results = { "─", "│", "─", "│", "├", "┤", "╯", "╰" },
 					preview = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
 				},
@@ -44,9 +44,7 @@ return {
 					"%.webp",
 					"%.min.",
 					"%.ico",
-					"__init__.py",
 					"CACHE",
-					"dist",
 					"%.bin",
 					"migrations",
 				},
@@ -77,16 +75,15 @@ return {
 		vim.keymap.set("n", "<leader>fq", builtin.quickfix, { desc = "Telescope quickfix" })
 		vim.keymap.set("n", "<leader>b", builtin.buffers, { desc = "Telescope buffers" })
 		vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
-		vim.keymap.set("n", "<leader>tw", builtin.lsp_dynamic_workspace_symbols, {})
-		vim.keymap.set("n", "<leader>ts", builtin.lsp_document_symbols, {})
-		vim.keymap.set("n", "<leader>tr", builtin.lsp_references, {})
-		vim.keymap.set("n", "<leader>tc", builtin.colorscheme, {})
-		vim.keymap.set("n", "<leader>th", builtin.help_tags, {})
-		vim.keymap.set("n", "<leader>tr", builtin.lsp_references, {})
-		vim.keymap.set("n", "<leader>tdw", builtin.diagnostics, {})
-		vim.keymap.set("n", "<leader>gl", builtin.git_commits, {})
-		vim.keymap.set("n", "<leader>gb", builtin.git_branches, {})
-		vim.keymap.set("n", "<leader>td", "<cmd>Telescope diagnostics bufnr=0<cr>", {})
+		vim.keymap.set("n", "<leader>fw", builtin.lsp_dynamic_workspace_symbols, {})
+		vim.keymap.set("n", "<leader>fs", builtin.lsp_document_symbols, {})
+		vim.keymap.set("n", "<leader>fr", builtin.lsp_references, {})
+		vim.keymap.set("n", "<leader>fd", builtin.diagnostics, {})
 		vim.keymap.set("n", "<leader>tt", ":TodoTelescope<cr>", {})
+		-- vim.keymap.set("n", "<leader>th", builtin.help_tags, {})
+		--vim.keymap.set("n", "<leader>tc", builtin.colorscheme, {})
+		--vim.keymap.set("n", "<leader>gl", builtin.git_commits, {})
+		--vim.keymap.set("n", "<leader>gb", builtin.git_branches, {})
+		-- vim.keymap.set("n", "<leader>td", "<cmd>Telescope diagnostics bufnr=0<cr>", {})
 	end,
 }

@@ -32,13 +32,6 @@ return {
 				end,
 			})
 			require("core.highlights")
-			-- vim.cmd("autocmd VimEnter * hi ZenBg ctermbg=NONE guibg=NONE")
-
-			-- vim.api.nvim_create_autocmd("VimEnter", {
-			--   callback = function()
-			--     vim.cmd("hi ZenBg ctermbg=NONE guibg=NONE")
-			--   end,
-			-- })
 		end,
 	},
 }

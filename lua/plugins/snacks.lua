@@ -7,7 +7,6 @@ return {
 		dashboard = { enabled = true }, -- Pantalla de inicio moderna
 		explorer = { enabled = true }, -- Explorador de archivos integrado
 		input = { enabled = true }, -- Inputs de Neovim más estéticos
-		picker = { enabled = true }, -- Selector de archivos y más
 		gh = { enabled = true }, -- Integración con GitHub
 		notifier = { enabled = true }, -- Notificaciones flotantes estilo toast
 		statuscolumn = { enabled = true }, -- Números de línea y signos mejorados
