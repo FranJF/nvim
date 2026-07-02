@@ -1,12 +1,18 @@
 return {
 	{
 		"williamboman/mason.nvim",
-		opts = { ensure_installed = { "pylsp", "ruff", "stylua", "lua-language-server", "prettierd" } },
 		config = true,
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
 		opts = { auto_install = true },
+	},
+	{
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		dependencies = { "williamboman/mason.nvim" },
+		opts = {
+			ensure_installed = { "ruff", "pylsp", "stylua", "prettierd", "lua-language-server" },
+		},
 	},
 	{
 		"neovim/nvim-lspconfig",

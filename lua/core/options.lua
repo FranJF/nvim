@@ -17,3 +17,5 @@ opt.swapfile = false
 opt.backup = false
 opt.undofile = true
 opt.signcolumn = "yes"
+opt.cursorline = true
+opt.cursorlineopt = "number"
